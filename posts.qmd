@@ -1,0 +1,44 @@
+---
+title: "Portfolio"
+description-meta: "{{< meta website.description >}}"
+listing: # Make a Custom Listing when I can!
+  - id: academic
+    contents: "posts/academic"
+    filter-ui: false # I will hide the filtering option as there is no project to be shown
+  - id: ux
+    contents: "posts/ux"
+    filter-ui: false
+  - id: data_analytics
+    contents: "posts/data_analytics"
+    filter-ui: false
+---
+
+Work in progress!
+
+::: {.panel-tabset}
+
+## Academic
+
+This is a list of projects related to my research as a PhD in experimental psychologist.
+
+:::{#academic}
+
+:::
+
+## User Experience (UX)
+
+Here I will be posting projects related to User Experince research and/or design.
+
+:::{#ux}
+
+:::
+
+## Data Analytics
+
+Here I will present some data analytics projects (data handeling, visualization, reporting, etc.).
+
+:::{#data_analytics}
+
+:::
+
+:::

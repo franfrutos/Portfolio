@@ -1,0 +1,141 @@
+/*-- scss:defaults --*/
+$purple:  #170C3A !default;
+$light-orange:  #FB9E07 !default;
+$orange:  #EE6A24 !default;
+$red:     #CF4446 !default;
+
+$link-color: $orange !default;
+$link-decoration: none !default;
+$link-hover-color: $red !default;
+$link-hover-decoration: underline !default;
+
+$navbar-bg: $purple !default;
+$navbar-fg: #fff !default;
+$navbar-hl: $light-orange !default;
+
+body, html{
+    height: 100% !important; /*Body covers the full viewing range*/
+    width: 100% !important;
+    margin: 0; /*No blank space*/
+    padding: 0;
+}
+
+#quarto-header {
+    color:white !important;
+    transition: color .5s ease-in;
+    
+}
+
+.navbar-title:hover {
+    color: $light-orange;
+}
+
+
+/* The page overflow the screen in the home site*/
+#home {
+    #quarto-content {
+        width: 95%;
+        margin-right: auto !important;
+        margin-left: auto !important;
+    } 
+    padding: 1rem 5rem;
+
+    li {
+        font-size: .85em;
+    }
+}
+
+.pad {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.flex-col {
+    display: flex;
+    // Ironicly
+    flex-direction: row;
+    justify-content: left;
+    gap: 2rem;
+}
+
+.network-icon {
+    a {
+        transition: all .2s ease-in-out;
+    }
+    a:hover {
+        transform: scale(1.2); 
+        color: $orange !important;
+    }
+}
+
+.education {
+    li::marker {
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 400;
+        content: "";
+    }
+    span {
+        font-size: .85em;
+        color: rgb(0, 0, 0, .6);
+    }
+}
+
+
+
+
+@media (min-width: 500px) and (max-width: 992px) {
+    .container {
+        padding: 50px;
+    }
+    #home {
+        .grid {
+            gap: 0 !important;
+        }
+        padding: 0 2rem
+    }
+}
+
+
+
+.about {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px;
+    text-align: center;
+}
+img.myself {
+    height: 15em !important;
+    width: 15em;
+    object-fit: cover;
+
+}
+
+.presentation-text {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.presentation-subtext {
+    font-size: 1.1rem;
+    padding-top: .5rem;
+    font-weight: normal;
+    color: rgb(0, 0, 0, .5)
+}
+
+.network-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 1rem;
+    color:$orange
+}
+
+#about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+

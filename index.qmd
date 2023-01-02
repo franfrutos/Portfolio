@@ -1,0 +1,78 @@
+---
+pagetitle: "{{< meta website.title >}}"
+description-meta: "{{< meta website.description >}}"
+main-photo: /source/myself_main.jpeg
+format:
+  html:
+    quarto-template-params:
+      banner-header-class: "home"
+    theme: styles.scss
+    toc: false
+    anchor-sections: false
+    page-layout: custom
+---
+:::{#home}
+:::{.grid .container}
+:::{.g-col-12 .g-col-lg-4 .pad}
+:::{.about}
+```{=html}
+  <img class="rounded-circle myself" src="{{< meta main-photo >}}" alt="{{< meta website.title >}}">
+```
+:::{#presentation}
+```{=html}
+<div class="presentation-text">Francisco Garre-Frutos</div>
+<div class="presentation-subtext">Experimental psychologist</div>
+```
+:::{.network-icon}
+```{=html}
+<!-- Truco extrañisimo. Para que font awesome funcione en un code block de html es necesario poner un shortcode referenciando lo que se va a utilizar-->
+{{< fa brands >}}
+<a href="https://twitter.com/Fran_gfr"><i class="fa-brands fa-twitter fa-xl" aria-label="twitter"></i></a>
+<a href="https://github.com/franfrutos"><i class="fa-brands fa-github fa-xl" aria-label="github"></i></a>
+<a href="https://www.linkedin.com/in/francisco-garre-frutos-462070129/"><i class="fa-brands fa-linkedin fa-xl" aria-label="linkedin"></i></a><a href="mailto:fgfrutos@gmail.com"><i class="fa-solid fa-envelope fa-xl" aria-label="envelope"></i></a>
+```
+:::
+:::
+:::
+:::
+
+:::{.g-col-12 .g-col-lg-8 .pad}
+# About me
+
+I am a PhD student in experimental psychology with a strong interest in transitioning to a data analyst or UX researcher role. Throughout my academic career, I have developed strong skills in data analysis and research design, as well as a passion for understanding and improving human behavior. In response to the COVID-19 pandemic, I taught myself web development and gathered data online for my experiments. This experience has given me valuable skills in managing databases, creating online surveys and experiments, and developing web-based research tools. I am excited to bring these skills to a new field and make an impact through data-driven decision making. 
+
+On this site, you will find examples of my work and experience, as well as information about my education and professional background. Thank you for visiting!
+
+:::{.flex-col}
+:::{.interests}
+### Interests
+
+- Data analysis and visualization
+- User experience (UX) research
+- Human-computer interaction
+- Web development and design
+- Online research methods
+- Psychology of learning and cognition
+- Survey and experiment design
+- Data-driven decision making
+
+:::
+:::{.education}
+### Education
+
+```{=html}
+ <ul class="fa-ul">
+    <li><span class="fa-li"><i class="fas fa-graduation-cap"></i></span>Ph.D. in Experimental Psychology<br>
+    <span>University of Granada</span></li>
+    <li><span class="fa-li"><i class="fas fa-graduation-cap"></i></span> M.Sc. in Cognitive and behavioral neuroscience<br>
+    <span>University of Granada</span></li>
+    <li><span class="fa-li"><i class="fas fa-graduation-cap"></i></i></span>B.Sc. in Psychology<br>
+    <span>University of Murcia</span></li>
+  </ul>
+```
+ 
+:::
+:::
+:::
+:::
+:::
