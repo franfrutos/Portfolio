@@ -95,6 +95,27 @@ body, html{
     }
 }
 
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 5px;
+    }
+    #home {
+        .grid {
+            gap: 0 !important;
+        }
+        padding: 0
+    }
+
+    .flex-col {
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    #education > h3 {
+        margin-top: .75rem;
+    }
+}
+
 
 
 .about {
