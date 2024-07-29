@@ -5,6 +5,33 @@ $light-orange: #FB9E07 !default;
 $orange: #EE6A24 !default;
 $red: #CF4446 !default;
 
+/* Dark mode variables */
+$body-bg: #1e1e1e !default;
+/* Dark mode background color */
+$body-color: #cfcfcf !default;
+/* Dark mode text color */
+$link-color: #EE6A24 !default;
+/* Dark mode link color */
+$input-bg: #2e2e2e !default;
+/* Dark mode input background color */
+$popover-bg: #2c2c2c !default;
+/* Dark mode popover background color */
+
+$link-decoration: none !default;
+$link-hover-color: $red !default;
+$link-hover-decoration: underline !default;
+
+$navbar-bg: $purple !default;
+$navbar-fg: #fff !default;
+$navbar-hl: $light-orange !default;
+
+/*-- scss:defaults --*/
+$purple: #170C3A !default;
+$light-purple: #7556de42;
+$light-orange: #FB9E07 !default;
+$orange: #EE6A24 !default;
+$red: #CF4446 !default;
+
 $link-color: $orange !default;
 $link-decoration: none !default;
 $link-hover-color: $red !default;
@@ -71,7 +98,7 @@ html {
 }
 
 .footer {
-    border-top: 1px solid #dee2e6;
+    border-top: 1px solid #4a4b4d;
 }
 
 .about {
@@ -100,13 +127,6 @@ img.myself {
     font-weight: bold;
 }
 
-.presentation-subtext {
-    font-size: 1.1rem;
-    padding-top: .5rem;
-    font-weight: normal;
-    color: rgb(0, 0, 0, .5)
-}
-
 .network-icon {
     display: flex;
     flex-direction: row;
@@ -124,8 +144,7 @@ img.myself {
 
 #recursive-text {
     height: 25.5px;
-    color: rgb(0, 0, 0, .5)
-}
+    color: rgba(175, 175, 175, 0.5)}
 
 #recursive-text::after {
     content: " |";
